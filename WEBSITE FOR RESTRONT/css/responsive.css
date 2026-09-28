@@ -1,0 +1,79 @@
+@media (max-width: 1024px) {
+  section {
+    padding: 5rem 2rem;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .split-section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .split-text {
+    padding-right: 0;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .masonry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 80%; height: 100vh;
+    background-color: var(--bg-secondary);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: right var(--transition-fast);
+    border-left: 1px solid rgba(201, 164, 92, 0.2);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .masonry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .masonry-item.wide, .masonry-item.tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .banner-section {
+    padding: 6rem 1.5rem;
+  }
+}

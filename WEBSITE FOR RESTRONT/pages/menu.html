@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — NOIR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="../index.html" class="logo">NOIR</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservations.html" class="btn">Reserve a Table</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <section style="padding-top: 10rem;">
+    <div class="section-title-wrap">
+      <p class="section-subtitle">Crafted • Seasonal • Refined</p>
+      <h1 class="section-title">Our Menu</h1>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-category="all">All</button>
+      <button class="tab-btn" data-category="starters">Starters</button>
+      <button class="tab-btn" data-category="mains">Mains</button>
+      <button class="tab-btn" data-category="desserts">Desserts</button>
+    </div>
+
+    <!-- Menu List -->
+    <div class="menu-category" data-group="starters">
+      <h3 class="menu-category-title">Starters</h3>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <h4>Burrata & Heirloom Tomatoes</h4>
+          <p>Aged balsamic reduction, basil oil, toasted sourdough</p>
+        </div>
+        <span class="menu-item-price">₹850</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <h4>Truffle Mushroom Soup</h4>
+          <p>Wild forest mushrooms, truffle cream, herb croutons</p>
+        </div>
+        <span class="menu-item-price">₹750</span>
+      </div>
+    </div>
+
+    <div class="menu-category" data-group="mains">
+      <h3 class="menu-category-title">Main Course</h3>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <h4>Herb Crusted Chicken</h4>
+          <p>Roasted garlic potato purée, baby carrots, thyme jus</p>
+        </div>
+        <span class="menu-item-price">₹1,250</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <h4>Truffle Pasta</h4>
+          <p>Handcrafted tagliatelle, fresh shaved truffle, parmesan cream</p>
+        </div>
+        <span class="menu-item-price">₹1,450</span>
+      </div>
+    </div>
+
+    <div class="menu-category" data-group="desserts">
+      <h3 class="menu-category-title">Desserts</h3>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <h4>Dark Chocolate Tart</h4>
+          <p>70% Valrhona ganache, gold leaf, sea salt ice cream</p>
+        </div>
+        <span class="menu-item-price">₹650</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-info">
+          <h4>Vanilla Crème Brûlée</h4>
+          <p>Tahitian vanilla bean, caramelized sugar crust, fresh berries</p>
+        </div>
+        <span class="menu-item-price">₹600</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2026 NOIR Fine Dining. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/menu.js"></script>
+</body>
+</html>
